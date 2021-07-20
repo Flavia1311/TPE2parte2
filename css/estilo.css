@@ -45,7 +45,7 @@ li.list-group-item.active {
 }
 
 .btn-light {
-    color: #000;
+    color: rgb(107, 92, 92);
     background-color: #0f8ff8;
     border-color: #f8f9fa;
     margin-block: 10px;
@@ -270,8 +270,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
-    background-color: rgb(138, 135, 135);
+    color: #a9afb4;
+    background-color: rgb(10, 8, 8);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
@@ -308,13 +308,13 @@ body {
 }
 
 .col-10 {
-    background-color: rgb(175, 172, 172);
+    background-color: rgb(32, 25, 25);
     background-size: cover;
     height: 500;
 }
 
 .col-8 {
-    background-color: rgb(146, 143, 143);
+    background-color: rgb(20, 17, 17);
     background-size: cover;
     margin-top: 60;
     height: 500;
@@ -374,18 +374,18 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: rgb(106, 106, 226) 2px solid;
+    border: rgb(106, 106, 226) 10px solid;
 }
 
 .usuario {
-    padding: 5%;
-    width: 90%;
-    height: 90%;
+    padding: 10%;
+    width: 80%;
+    height: 60%;
 }
 
 .comentario {
     border-radius: 50px;
-    border: rgb(221, 215, 216) 2px solid;
+    border: rgb(221, 215, 216) 10px solid;
 }
 
 .comentario p {
@@ -402,5 +402,5 @@ a {
 }
 
 .nombre_comentario {
-    border-bottom: rgb(106, 106, 226) solid 3px;
+    border-bottom: rgb(106, 106, 226) solid 10px;
 }
