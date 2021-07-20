@@ -11,11 +11,11 @@
                         <div class="col-6">
                             <label for="puntaje"> <span>Mi calificacion:</span> </label>
                             <select v-model="puntaje" id="puntaje" class="form-control text-warning puntaje" name="puntaje">
-                                <option value="1"> 1 &#xf005;</option>
-                                <option value="2">2 &#xf005; &#xf005;</option>
-                                <option value="3">3 &#xf005; &#xf005; &#xf005;</option>
-                                <option value="4">4 &#xf005; &#xf005; &#xf005; &#xf005;</option>
-                                <option value="5">5 &#xf005; &#xf005; &#xf005; &#xf005; &#xf005;</option>
+                                <option value="1"> 1</option>
+                                <option value="2">2 </option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
                             </select>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
             <div class="col-12 comentario">
                 <div class="row">
                     <div class="col-2">
-                        
+                     <img class="usuario" src="imagenes/pig.png">   
                     </div>
                     <div class="col-10">
                         <div class="row nombre_comentario">
