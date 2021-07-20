@@ -2,7 +2,7 @@
 <div class="mb-3">
 
     <div class="formulario">
-        <form method="POST" action="formEditarPlato" enctype="multipart/form-data>
+        <form method="POST" action="formEditarPlato">
             <div class="titulo_formulario">
                 Editar plato
             </div>

@@ -63,7 +63,7 @@ switch ($param[0]) {
 
     case 'formEditarPlato':
         $PlatosController = new PlatosController();
-        $PlatosController->ShowEditar($param[0]);
+        $PlatosController->ShowEditar($param[1]);
         break;
 
     case 'editarPlato':
