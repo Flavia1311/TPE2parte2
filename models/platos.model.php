@@ -46,33 +46,31 @@ class PlatosModel extends Model
             $pathImg= $this->uploadImage($imagen);
         }  
         $query = $this->getDb()->prepare("INSERT INTO platos (nombre, detalle, nacionalidad, id_categoria, imagen) VALUES (?, ?, ?, ?, ?)");
-        return$query->execute([$nombre, $detail, $nacionalidad, $id, $pathImg]);
+        return$query->execute([$nombre, $detail, $nacionalidad, $id_plato, $pathImg]);
     }
     
-    public function editar($id, $nombre, $detail, $precio, $dias, $imagen = NULL)
+    public function edit ($nombre, $detail, $nacionalidad, $id, $imagen = NULL)
     {
         if ($imagen) {
-            $pathImg = $this->uploadImage();
+            $pathImg = $this->uploadImage($imagen);
         }
 
-        $query = $this->getDb()->prepare('UPDATE platos SET nombre = ?, precio = ?, dias = ?,
-            imagen = ?, detalle = ?  WHERE id = ?');
-        $query->execute([$nombre, $precio, $dias, $pathImg, $detail, $id]);
+        $query = $this->getDb()->prepare('UPDATE platos SET nombre = ?, detalle = ?, nacionalidad = ?, id_categoria,
+            imagen = ? WHERE id_plato = ?');
+        return$query->execute([$nombre, $detail, $nacionalidad, $id_plato, $pathImg]);
     }
 
     /**
      * @param $nombre, $detail, $precio, $dias
      * Edito un plato en base al nombre, detail, precio y dias pasados por parámetro
      */
-    public function editarSinImagen($id, $nombre, $detail, $dias)
+    public function editarSinImagen($nombre, $detail, $nacionalidad, $id)
     {
 
-        $query = $this->getDb()->prepare('UPDATE platos SET nombre = ?, precio = ?, dias = ?,
+        $query = $this->getDb()->prepare('UPDATE platos SET nombre = ?, detalle = ?, nacionalidad = ?, id_categoria,
             detalle = ?  WHERE id = ?');
-        $query->execute([$nombre, $dias, $detail, $id]);
+        $query->execute([$nombre, $detail, $nacionalidad, $id, $pathImg]);
     }
-
-
 
 
     function uploadImage()
