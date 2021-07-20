@@ -63,6 +63,12 @@ li.list-group-item.active {
     margin-block: 10px;
 }
 
+.btn .btn-danger1 {
+    width: 208px;
+    border-color: #f8f9fa;
+    margin-block: 10px;
+}
+
 .card.bg-secondary.mb-3 {
     margin-top: 30px;
     width: 200px;
@@ -181,12 +187,30 @@ h1 {
     color: aliceblue;
 }
 
+h5 {
+    color: aliceblue;
+}
+
 h3 {
     color: aqua;
-    text-align: right;
+    text-align: center;
 }
 
 .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.login-box h3 {
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
@@ -239,10 +263,6 @@ h3 {
     color: rgb(0, 0, 0);
 }
 
-.login-box a:hover {
-    color: rgb(0, 0, 0);
-}
-
 *,
  ::after,
  ::before {
@@ -264,13 +284,13 @@ ul {
 }
 
 body {
+    color: wheat;
     height: 600;
     margin: 0;
     font-family: var(--bs-font-sans-serif);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
     background-color: rgb(0, 0, 0);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
@@ -308,6 +328,12 @@ body {
 }
 
 .col-10 {
+    background-color: black;
+    background-size: cover;
+    height: 500;
+}
+
+.col-12 {
     background-color: black;
     background-size: cover;
     height: 500;
@@ -403,4 +429,8 @@ a {
 
 .nombre_comentario {
     border-bottom: rgb(106, 106, 226) solid 3px;
+}
+
+.puntaje {
+    font-family: 'FontAwesome', 'Second Font name'
 }

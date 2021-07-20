@@ -45,25 +45,27 @@
             <div class="col-12 comentario">
                 <div class="row">
                     <div class="col-2">
-                        
+
                     </div>
-                    <div class="col-10">
-                        <div class="row nombre_comentario">
-                            <div class="col-10">
-                                <h4 class="mt-2"> {{ comentario.nombre }} </h4>
-                            </div>
-                            <div class="col-2">
-                            <p class="puntuacion text-warning mt-2"> {{ comentario.puntuacion }} <i class="fas fa-star"></i> </p>
-                            </div>
+                    <div class="col-12">
+                       
+                        <p class="text-light">
+
+                            {{ comentario.nombre }}
+
+
+
+                            <p class="puntuacion text-warning mt-2"> {{ comentario.puntuacion }} <i class="fas fa-star"></i>
+                            </p>
                         </div>
-                        <p class="mt-2"> {{ comentario.comentario }} </p>
+                        <p class="text-light">{{ comentario.comentario }}</p>
                         <div class="eliminar_comentario" v-if="admin == 2">
-                            <button class="btn btn-danger "
-                                v-on:click="eliminar_comentario(comentario.id)">Eliminar</button>
+                            <button class="bg-danger " v-on:click="eliminar_comentario(comentario.id)">Eliminar</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
         </div>
 
