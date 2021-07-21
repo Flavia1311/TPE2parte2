@@ -39,6 +39,8 @@ class PlatosModel extends Model
 
 
 }
+
+
     public function agregar($nombre, $detail, $nacionalidad, $id, $imagen= null)
     {
         $pathImg = null;
@@ -46,10 +48,10 @@ class PlatosModel extends Model
             $pathImg= $this->uploadImage($imagen);
         }  
         $query = $this->getDb()->prepare("INSERT INTO platos (nombre, detalle, nacionalidad, id_categoria, imagen) VALUES (?, ?, ?, ?, ?)");
-        return$query->execute([$nombre, $detail, $nacionalidad, $id_plato, $pathImg]);
+        return$query->execute([$nombre, $detail, $nacionalidad, $id, $pathImg]);
     }
     
-    public function edit ($nombre, $detail, $nacionalidad, $id, $imagen = NULL)
+    public function editar ($nombre, $detail, $nacionalidad, $id, $imagen = NULL)
     {
         if ($imagen) {
             $pathImg = $this->uploadImage($imagen);
@@ -71,6 +73,7 @@ class PlatosModel extends Model
             detalle = ?  WHERE id = ?');
         $query->execute([$nombre, $detail, $nacionalidad, $id, $pathImg]);
     }
+
 
 
     function uploadImage()

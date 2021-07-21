@@ -57,10 +57,11 @@
 
                         <p class="puntuacion text-warning mt-2"> {{ comentario.puntuacion }} <i class="fas fa-star"></i>
                         </p>
-                    </div>
+                   
                     <p class="text-light">{{ comentario.comentario }}</p>
                     <div class="eliminar_comentario" v-if="admin == 2">
-                        <button class="bg-danger " v-on:click="eliminar_comentario(comentario.id)">Eliminar</button>
+                        <button class="bg-light " v-on:click="eliminar_comentario(comentario.id)">Eliminar</button>
+                    </div>
                     </div>
                 </div>
             </div>

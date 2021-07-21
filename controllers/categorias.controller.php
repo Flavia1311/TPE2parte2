@@ -27,7 +27,7 @@ class CategoriasController {
     public function editar() {
         if (AuthHelper::getUsuarioAdmin())  {
 
-        $id = $_POST['categoria'];
+        $id_plato = $_POST['categoria'];
         $nombre = $_POST['name'];
 
         if (!empty($_POST['name'])) {
@@ -40,12 +40,13 @@ class CategoriasController {
         }
     }
 
+    
     public function agregar() {
         if (AuthHelper::getUsuarioAdmin()){
             $nombre = $_POST['name'];
            
             if (!empty($_POST['name'])) {
-                //busco en la tabla de categoriaes alguno que coincida con el nombre puesto por el usuario.
+                //busco en la tabla de categorias alguno que coincida con el nombre puesto por el usuario.
                 $this->modelcategorias->agregar($nombre);
                 header("Location: " . BASE_URL . 'platos');
             } else
@@ -53,6 +54,7 @@ class CategoriasController {
                 $this->view->showError("No es posible agregar categorias vacios");
             }
         }
+
 
         
         //funcion para eliminar una categoria de la base que coincida con el id 

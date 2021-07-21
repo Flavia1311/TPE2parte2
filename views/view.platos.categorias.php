@@ -61,7 +61,7 @@ class PlatosCategoriasView extends View
         $this->getSmarty()->display('templates/form.editar.categoria.tpl');
     }
 
-    public function ShowEditPlatos($plato, $error) {
+    public function ShowEditarPlatos($plato, $error) {
         $this->getSmarty()->assign('title', 'Edit');
         $this->getSmarty()->assign('plato', $plato);
         $this->getSmarty()->display('templates/form.editar.plato.tpl');

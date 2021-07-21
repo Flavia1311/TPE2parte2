@@ -60,13 +60,13 @@ li.list-group-item.active {
 .btn-danger {
     width: 208px;
     border-color: #f8f9fa;
-    margin-block: 10px;
+    margin-block-end: 10px;
 }
 
 .btn .btn-danger1 {
     width: 208px;
     border-color: #f8f9fa;
-    margin-block: 10px;
+    margin-block-end: 10px;
 }
 
 .card.bg-secondary.mb-3 {
@@ -410,8 +410,7 @@ a {
 }
 
 .comentario {
-    border-radius: 50px;
-    border: crimson 2px solid;
+    border: rgb(32, 238, 142) 2px solid;
 }
 
 .comentario p {
@@ -433,4 +432,8 @@ a {
 
 .puntaje {
     font-family: 'FontAwesome', 'Second Font name'
+}
+
+.bg-light {
+    margin-block-end: 20px;
 }

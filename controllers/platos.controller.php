@@ -1,5 +1,6 @@
 <?php
 require_once('models/platos.model.php');
+require_once('views/view.php');
 require_once('views/view.platos.categorias.php');
 require_once('models/categorias.model.php');
 include_once('helpers/auth.helper.php');
@@ -49,9 +50,9 @@ class PlatosController {
 
     //funcion para mostrar el formulario de editar con la info de la base de datos precargada
     //con el id pasado por parametro (cuando aprieto el boton de la tarjeta)
-    public function ShowEditar($id_plato, $error = null) {
+    public function ShowEditar($id, $error = null) {
         if (AuthHelper::getUsuarioAdmin())  {
-            $plato = $this->modelplatos->get($id_plato);
+            $plato = $this->modelplatos->get($id);
             $this->view->ShowEditPlatos($plato, $error);
         }  
     }
@@ -59,7 +60,7 @@ class PlatosController {
     //funcion para editar un plato,si esta vacio el nombre, vuelve a mostrar el formulario con un
     //mensaje de error
     public function editar() {
-        if (AuthHelper::getUsuarioAdmin() == 2) {
+        if (AuthHelper::getUsuarioAdmin()) {
             $id_plato = $_POST['plato'];
             $nombre = $_POST['name'];
             $detail = $_POST['detail'];
