@@ -45,7 +45,7 @@ li.list-group-item.active {
 }
 
 .btn-light {
-    color: #000;
+    color: rgb(107, 92, 92);
     background-color: #0f8ff8;
     border-color: #f8f9fa;
     margin-block: 10px;
@@ -260,7 +260,7 @@ h3 {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(167, 163, 163);
 }
 
 *,
@@ -328,7 +328,7 @@ body {
 }
 
 .col-10 {
-    background-color: black;
+    background-color: rgb(32, 25, 25);
     background-size: cover;
     height: 500;
 }
@@ -340,7 +340,7 @@ body {
 }
 
 .col-8 {
-    background-color: black;
+    background-color: rgb(20, 17, 17);
     background-size: cover;
     margin-top: 60;
     height: 500;
@@ -355,7 +355,7 @@ body {
     flex: 0 0 auto;
     width: 16.6666666667%;
     height: 620;
-    background-color: black;
+    background-color: rgb(136, 133, 133);
     background-size: cover;
 }
 
@@ -400,13 +400,13 @@ a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: rgb(106, 106, 226) 2px solid;
+    border: rgb(106, 106, 226) 10px solid;
 }
 
 .usuario {
-    padding: 5%;
-    width: 90%;
-    height: 90%;
+    padding: 10%;
+    width: 80%;
+    height: 60%;
 }
 
 .comentario {
@@ -418,7 +418,7 @@ a {
     margin: 4px;
     width: 85%;
     height: 50px;
-    color: black;
+    color: rgb(245, 241, 241);
 }
 
 .eliminar_comentario {
